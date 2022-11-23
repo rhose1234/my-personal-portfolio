@@ -161,7 +161,7 @@ font-family: 'Poppins', sans-serif; */
     border-radius: 30px;
 }
 .newsletter form input:last-child{
-    padding: 10px;
+    padding: 5px;
     display: inline-block;
     outline: none;
     border: none;
