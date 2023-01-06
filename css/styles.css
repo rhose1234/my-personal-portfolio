@@ -31,7 +31,7 @@ font-family: 'Poppins', sans-serif; */
 
   }
   .navbar-brand span{
-      color: #FEF826 !important;
+      color: #000000 !important;
   }
   .navbar-toggler{
     
@@ -190,7 +190,7 @@ font-family: 'Poppins', sans-serif; */
   margin-top: 20px;
   background: transparent;
   height: 350px;
-  height: 330px;
+  height: 350px;
   width: 100%;
   padding: 40px !important;
   border-radius: 20px !important;
