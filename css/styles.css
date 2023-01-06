@@ -106,7 +106,7 @@ font-family: 'Poppins', sans-serif; */
     font-size: 16px !important;
   }
   .nav-link:hover{
-    color: #FEF826 !important;
+    color: #00B1D2 !important;
   }
 .btn{
     background-color: #FEF826;
@@ -246,9 +246,55 @@ meter::-webkit-meter-optimum-value {
   background-color: #00B1D2 !important;
   border-radius: 50px !important;
 }
+.form-area{
+  padding-top: 5%;
 
+}
+.row.single-form{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.left{
+  background-color: #00B1D2;
+  padding: 200px 93px;
+}
+.left h2{
+ font-weight: 100;
+color: #ffffff;
+}
+.left h2 span{
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 48px !important;
+ 
+}
+.right{
+  padding: 70px 100px;
+  position: relative;
 
+}
+.right i{
+  position: absolute;
+  font-size: 80px;
+  left: -27px;
+  top: 40%;
+  color: #ffffff;
+}
+.form-control{
+  border: 2px solid #000000;
 
+}
+.right button{
+  border: none;
+  border-radius: 0;
+  background: #252525;
+  width: 180px;
+  color: #ffffff;
+  padding: 15px 0;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
 
 
 #footer{
@@ -268,4 +314,34 @@ color: #000000;
 #footer .social-icons .icons {
   color: #00B1D2!important;
   font-size: 20px;
+}
+@media (min-width:768px) and (max-width:991px) {
+  .right i{
+    top: -52px;
+    transform: rotate(90deg);
+    left: 50%;
+  }
+  
+}
+@media (max-width:767px) {
+  .left{
+    padding: 90px 15px;
+    text-align: center;
+  }
+  .left h2{
+    font-size: 25px;
+
+  }
+  .right{
+    padding: 25px;
+  }
+  .right i{
+    top: -52px;
+    transform: rotate(90deg);
+    left: 45%;
+  }
+  .right button{
+    width: 150px;
+    padding: 12px 0;
+  }
 }
