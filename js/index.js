@@ -1,29 +1,29 @@
 const myform = document.getElementById('myform');
-const Yourname = document.getElementById('Yourname');
+const name = document.getElementById('name');
 const message = document.getElementById('message');
 const email = document.getElementById('email');
 
 function reset(input) {
-  const relative = input.parentElement;
-  const small =relative.querySelector('small');
+  const formcontrol = input.parentElement;
+  const small = formcontrol.querySelector('small');
   small.innerText = '';
- relative.classList.remove('error');
+ formcontrol.classList.remove('error');
 }
 
-form.addEventListener('submit', (e) => {
+myform.addEventListener('submit', (e) => {
   checkInputs(e);
 });
 
 function checkInputs(e) {
-  const YournameValue = Yourname.value.trim();
+  const nameValue = name.value.trim();
   const messageValue = message.value.trim();
   const emailvalue = email.value.trim();
   
-  if (YournameValue === '') {
-    setErrorFor(Yourname, 'Yourname cannot be blank');
+  if (nameValue === '') {
+    setErrorFor(name, 'name cannot be blank');
     e.preventDefault();
   } else {
-    setSuccessFor(Yourname);
+    setSuccessFor(name);
   }
   if (messageValue === '') {
     setErrorFor(message, 'Message cannot be blank');
@@ -45,18 +45,18 @@ function checkInputs(e) {
  
 }
 function setErrorFor(input, message) {
-  constrelative = input.parentElement;
-  const small =relative.querySelector('small');
+  constformcontrol = input.parentElement;
+  const small =formcontrol.querySelector('small');
 
   small.innerText = message;
 
- relative.classList.add('error');
+ formcontrol.classList.add('error');
 }
 
 function setSuccessFor(input) {
-  constrelative = input.parentElement;
- relative.classList.add('success');
- relative.classList.remove('error');
+  constformcontrol = input.parentElement;
+ formcontrol.classList.add('success');
+ formcontrol.classList.remove('error');
 }
 
 // email validating
@@ -66,8 +66,8 @@ function isEmail(email) {
   );
 }
 
-Yourname.addEventListener('keyup', function () {
-  reset(Yourname);
+name.addEventListener('keyup', function () {
+  reset(name);
 });
 message.addEventListener('keyup', function () {
   reset(message);

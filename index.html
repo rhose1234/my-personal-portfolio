@@ -83,7 +83,7 @@
 
     
     
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow bg-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top  bg-dark ">
       <div class="container">
           <a class="navbar-brand fw-bold ms-2  " style="font-family: 'Sacramento', cursive;" href="#">Mar<span style="font-family: 'Sacramento', cursive;">ve</span>lous</a>
 
@@ -242,32 +242,38 @@
     <h2 class="fw-bold mb-5 text-center">Services</h2>
   
   <div class="row box">
+    <div class="col-lg-4 col-md-6 col-sm-6">
+      <div class="cards text-center  ">
+        <img src="images/web-design.png" class="icon">
+      <h5 class="pt-3">Website Design</a></h5>
+      <p class="p-2">
+         “If there's one thing you learn by working on a lot of different Websites is functionality and structure.
+          appearance of a website must be appealing and consistent with the brand " </p>
+      </div>
+      </div>
+
   <div class="col-lg-4 col-md-6 col-sm-6">
   <div class="cards text-center ">
    <img src="images/ux-design.png" class="icon">
-  <h5 class="p-1">UI/UX Design</h5>
-  <p class="p-2">“No product is an island. A product is more than a product. It is a cohesive, integrated set of experiences. ...</p>
+  <h5 class="p-1">SEO Optimization</h5>
+  <p class="p-2">“SEO is the process of optimizing a website
+     to improve its visibility and ranking in search engine results pages (SERPs).
+      How would you feel if your business ranked first on Google?</p>
   </div>
   </div>
   
   <div class="col-lg-4 col-md-6 col-sm-6">
   <div class=" cards text-center ">
    <img src="images/graphic-designer.png" class="icon">
-  <h5 class="p-1 pt-3"> Graphics Design</h5>
-  <p class="p-2">Design is the intermediary between information and understanding.” </p>
+  <h5 class="p-1 pt-3">Chatbot making</h5>
+  <p class="p-2">"Chatbots can be used to handle frequently asked questions,
+     provide information about products and services, and resolve customer issues."
+ </p>
   </div>
   </div>
   
 
-  <div class="col-lg-4 col-md-6 col-sm-6">
-  <div class="cards text-center  ">
-    <!-- <i class="fa-solid fa-code icon mb-5"></i> -->
-    <img src="images/web-design.png" class="icon">
-  <h5 class="pt-3">Website Design</a></h5>
-  <p class="p-2">
-     “If there's one thing you learn by working on a lot of different Web sites is functionality and structure. </p>
-  </div>
-  </div>
+ 
   </div>
   
   </div>
@@ -348,25 +354,28 @@
                 <div class="col-sm-12 col-lg-6">
                   <div class="right">
                     <i class="bi bi-circle"></i>
-                    <form>
+                    <form id="myform">
 
-                      <div class="mb-3 pt-lg-0 pt-4">
+                      <div class="mb-3 pt-lg-0 pt-4 contacts">
                         <label for="name" class="form-label">Your Name</label>
-                        <input type="text" class="form-control" id="name" aria-describedby="name">
+                        <input type="text" class="form-control" id="name" >
+                        <small >Error</small>
                       </div>
 
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div class="mb-3 contacts">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" >
+                        <small >Error</small>
                       </div>
 
-                      <div class="mb-3">
+                      <div class="mb-3 contacts">
                         <label for="Message" class="form-label">Message</label>
-                       <textarea class="form-control" id="message"></textarea>
+                       <textarea class="form-control" id="message" ></textarea>
+                       <small >Error</small>
                       </div>
-                     
+                    
                       
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="submit" class="fw-bold">Submit</button>
                     </form>
                   </div>
                 </div>
