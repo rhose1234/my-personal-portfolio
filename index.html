@@ -132,11 +132,11 @@
           <h3 class="text-start">I am a frontend web developer</h3>
     
           <div class="newsletter">
-            <form>
-              <input type="email"  id="mail" placeholder="Enter Your Email" required>
-              <input type="submit" value="Subscribe" name="submit">
-            </form>
+          <button class="resume-btn" >Resume</button>
+          <button class="btn-2">Hire Me</button>
+
           </div>
+            
     
           <div class=" social-links">
             <div class="row d-block ">
@@ -156,7 +156,7 @@
       <div class="col-lg-6 col-md-12">
         <div class="">
           <div class="img">
-          <img src="/images/My project.png" alt="" class="pe-3 mt-0 w-100 mb-1" >
+          <img src="/images/My project.png" alt="" class="pe-3 mt-0 w-100 mb-1 " >
           </div>
 
         </div>
@@ -179,17 +179,12 @@
 </div>
 
 <p class="text-start fw-normal ">
-  My name is Marvelous Akorede. A student at the Ogun State Institute of Technology,
-   I am from Ogun State. My mission is to make creative ideas a reality through technology.
-    As a front-end web developer, I have one year of experience in HTML5, CSS, Javascript, Angular JS, Jquery,
-     and Bootstrap. During my OND program, I started writing codes, but I had no idea what they were about, so 
-     I enrolled in Aptech computer education, Sango OTA for Web Development course (a four-month course).
-      Aptech was a positive experience despite some difficulties regarding my code. As of now, I work remotely with Hynitr, a software company. 
-      Since I started my career in tech, Hynitr has been my favorite team, and I am delighted to be a part of it now. Listening to music and conducting research are some of my leisure activities.
-   I am currently looking forward to learning React.
-</p>
+  Hi there! <br>
 
- 
+  My name is Marvelous Akorede, and I am a front-end developer with one year's experience. I'm passionate about using technology to bring creative ideas to life, and I'm constantly seeking out creative and exciting projects to work on.
+  In addition to my work, I also believe in maintaining a healthy work-life balance. When I'm not coding, you can find me listening to music, watching a movie, spending time with my family, hanging out with friends, or surfing the internet. I believe that these activities help me stay inspired and energized, which ultimately benefits my work as well.
+  Thanks for stopping by, and I look forward to connecting with you soon!🥰
+</p>
 
 </div>
     
@@ -223,6 +218,11 @@
           </meter>
           <br><br>
 
+          <label   class="fw-bold">Git</label><br>
+          <meter  value="0.2">
+          </meter>
+          <br><br>
+
         
           <label   class="fw-bold">React js</label><br>
           <meter  value="0.03">
@@ -234,7 +234,6 @@
 </section>
 
 
-     
    
   <section class="services pt-5 mb-5" id="services">
   
@@ -342,6 +341,72 @@
             </div>
         </section>
 
+        <section class="certification pt-5 mb-5" id="certification">
+  
+          <div class="container">
+         
+            <h2 class="fw-bold mb-5 text-center">Certification & Achievements</h2>
+          
+          <div class="row box">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              
+              <div class="card text-center  ">
+              <h5 class="p-0">Aptech web development certificate</a></h5>
+              <img src="images/aptech.jpg" class="ms-4 cert w-75 img-fluid">
+              </div>
+              </div>
+        
+          <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="card text-center ">
+          
+          <h5 class="p-1">SEO masterclass for creators</h5>
+          <img src="images/seo.jpg" class="cert w-100 img-fluid">
+          </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="card text-center ">
+          
+          <h5 class="p-1">Aptlearn Web Development</h5>
+          <img src="images/aptlearn.jpg" class="cert w-100 img-fluid">
+          </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-12 col-sm-12 mt-lg-3">
+              
+            <div class="card text-center  ">
+            <h5 class="p-0">GitHub pull-shark</a></h5>
+            <img src="images/pull-shark.png" class="ms-4 cert w-100 img-fluid">
+            </div>
+            </div>
+      
+        <div class="col-lg-4 col-md-12 col-sm-12 mt-lg-3">
+        <div class="card text-center ">
+        
+        <h5 class="p-1">GitHub quickdraw</h5>
+        <img src="images/quickdraw.png" class="cert w-100 img-fluid">
+        </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-12 col-sm-12 mt-lg-3">
+        <div class="card text-center ">
+        
+        <h5 class="p-1">Github Yolo</h5>
+        <img src="images/yolo.png" class="cert w-100 img-fluid">
+        </div>
+        </div>
+          
+        
+         
+          </div>
+          
+          </div>
+          
+          </section>
+        
+             
+
         <section id="contact">
           <div class="form-area pb-5">
             <div class="container">
@@ -436,7 +501,21 @@
         </section>
  
 </body>
-<script src="js/index.js"></script>
+
+<script>
+  const downloadButton = document.getElementsByClassName("resume-btn");
+const resumeUrl = "https://docs.google.com/document/d/1RsxHBiPb8rkDKEyedW1t1OVAgsOWWwkt/edit?usp=sharing&ouid=100476982465300697318&rtpof=true&sd=true";
+
+downloadButton.addEventListener("click", () => {
+  const downloadLink = document.createElement("a");
+  downloadLink.href = resumeUrl;
+  downloadLink.download = "https://docs.google.com/document/d/1RsxHBiPb8rkDKEyedW1t1OVAgsOWWwkt/edit?usp=sharing&ouid=100476982465300697318&rtpof=true&sd=true";
+  downloadLink.click();
+});
+
+</script>
+
+<script src=" js/index.js"></script>
 <script src=" js/jquery.min.js "></script>
 <script src=" js/bootstrap.min.js "></script>
 <script src=" js/popper.min.js "></script>

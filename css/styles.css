@@ -142,35 +142,15 @@ font-family: 'Poppins', sans-serif; */
     color: #000000;
     
 }
-.newsletter form{
-  margin-top: 30px;
-    width: 400px;
-    max-width: 100%;
-    position: relative;
+.newsletter button.resume-btn{
+  background-color: #00B1D2;
+  padding: 8px !important;
+  border: #00B1D2 !important;
+  font-weight: 500 !important;
+  border-radius: 10px;
+  
+}
 
-}
-.newsletter form input:first-child{
-    display: inline-block;
-    width: 100%;
-    padding: 14px 130px 14px 15px;
-    border: 2px solid#00B1D2;
-    outline: none;
-    border-radius: 10px;
-}
-.newsletter form input:last-child{
-    padding: 10px;
-    display: inline-block;
-    outline: none;
-    border: none;
-    position: absolute;
-    border-radius: 10px;
-    background-color: #00B1D2;
-    /* #25271A; */
-    color: #ffffff;
-    font-weight:600;
-    top: 6px;
-    right: 6px;
-}
 .social-links{
     margin-top: 20px;
     justify-content:center;
@@ -229,13 +209,35 @@ meter::-webkit-meter-optimum-value {
   border: none;
 }
 
+.card{
+  margin-top: 20px;
+  background: transparent;
+  height: 350px;
+  height: 400px;
+  width: 100%;
+  padding: 40px !important;
+  border-radius: 10px !important;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  
+ }
+.card h5{
+  color: #000000 ;
+}
+.card .cert{
+ /* width: 50px;
+ height: 50px; */
+ margin-bottom: 20px;
+
+  
+}
+
 .about h1{
   font-size: 40px !important;
   color: #000000 !important;
 }
 #about p{
  
-  line-height: 30px !important;
+  line-height: 40px !important;
  
 }
 .progress-bar {  
@@ -279,6 +281,7 @@ color: #ffffff;
   top: 40%;
   color: #ffffff;
 }
+
 .form-control{
   border: 1px solid #000000;
 
