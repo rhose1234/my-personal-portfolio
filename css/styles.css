@@ -127,7 +127,6 @@ font-family: 'Poppins', sans-serif; */
 }
 .content h1{
     color: #00B1D2 !important;
-   
     font-size: 50px !important;
     
     
@@ -138,33 +137,45 @@ font-family: 'Poppins', sans-serif; */
    margin-bottom: 10px;
     
 }
-.content h4{
+.content span{
     color: #000000;
+    font-size: 16px !important;
     
 }
 .newsletter button.resume-btn{
   background-color: #00B1D2;
-  padding: 8px !important;
-  border: #00B1D2 !important;
+  height: 50px;
+  width: 150px ;
+  border:  none !important;
   font-weight: 500 !important;
-  border-radius: 10px;
+  border-radius: 15px;
   
 }
+.newsletter button.btn-2{
 
+  background-color: transparent;
+  height: 50px;
+  width: 150px ;
+  border: 1px solid #00B1D2 !important;
+  font-weight: 500 !important;
+  border-radius: 15px;
+}
 .social-links{
     margin-top: 20px;
     justify-content:center;
-  
-    
-    
+     
 }
 .social-links .instagram, .facebook, .linkeldn, .twitter, .github, .whatsapp{
-    color: #000000 !important;
+    color: #00B1D2 !important ;
     font-size: 18px !important;
     height: 10px;
     width: 10px;
     border-radius: 10px !important;
 }
+/* #landingpage img{
+  border-radius: 40% !important;
+  border: 5px solid #00B1D2 !important;
+} */
 
  .cards{
   margin-top: 20px;
@@ -174,7 +185,6 @@ font-family: 'Poppins', sans-serif; */
   width: 100%;
   padding: 40px !important;
   border-radius: 20px !important;
-
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
  }
 .cards h5{
@@ -237,7 +247,7 @@ meter::-webkit-meter-optimum-value {
 }
 #about p{
  
-  line-height: 40px !important;
+  line-height: 35px !important;
  
 }
 .progress-bar {  
